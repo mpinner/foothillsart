@@ -5,12 +5,12 @@ import createwebsiteimages
 #########
 # Variables to change file titles and paths
 
-# used to name juror files, file name for every photo with numbers
-show_title = "foothills wildlife2022"
+# used to name juror files, file name for every photo with numbers, only for juror file
+show_title = "foothills January2023"
 
 # source input folder for input files, remember to use double slash
 # if set wrong will geyt a 'FileNotFoundError' below
-folder="C:\\Users\\rjp\\dev-foothills\\PhotosNov2022CleanedUp"
+folder="C:\\Users\\rjp\\dev-foothills\\INPUTPhotosCleanedUp"
 
 # has numbers and full titles
 output_folder="C:\\Users\\rjp\\dev-foothills\\OUTPUT"

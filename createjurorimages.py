@@ -13,6 +13,10 @@ def createjurorimages(filename, number, showtitle, folder, output_folder):
     medium=attributes[2]
     dimension=attributes[3]
     cost=attributes[4].split('.')[0]
+    createjurorimages(filename, title, medium, dimension, cost, number, showtitle, folder, output_folder)
+    
+
+def createjurorimages(filename, title, medium, dimension, cost, number,showtitle, folder, output_folder):
 
     image_filename=folder+"\\" + filename
 

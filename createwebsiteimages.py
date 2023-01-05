@@ -2,7 +2,8 @@ from PIL import Image, ImageOps, ImageFont, ImageDraw
 
 # create website images
 def createwebsiteimages(filename, number, folder, output_folder):
-    # filename='Francis,Kenda_ZigZagJag_Other Media_8x11_$950.jpg'
+    # filename='Francis Kenda_ZigZagJag_Other Media_8x11_$950.jpg'
+    # filename='Kenda Smith____.jpg' type space_ for missing data
 
     # parse attributes from image_filename
     attributes=filename.split('_')
@@ -13,6 +14,9 @@ def createwebsiteimages(filename, number, folder, output_folder):
     medium=attributes[2]
     dimension=attributes[3]
     cost=attributes[4].split('.')[0]
+    createwebsiteimages(filename, artist, title, medium, dimension, cost, number, folder, output_folder)
+
+def createwebsiteimages(filename, artist, title, medium, dimension, cost, number, folder, output_folder):
 
     image_filename=folder+"\\" + filename
 
@@ -49,4 +53,4 @@ def createwebsiteimages(filename, number, folder, output_folder):
     draw.text((img.width/2, 0), drawtext_line1, font=font, fill='black', anchor="ma")
     draw.text((img.width/2, 30), drawtext_line2, font=font, fill='black', anchor="ma")
 
-    img_with_border.save(output_folder+"\\" + str(number) + "_" + filename)
+    img_with_border.save(output_folder+"\\" + filename)
