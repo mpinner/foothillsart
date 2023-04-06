@@ -53,4 +53,5 @@ def createwebsiteimages(filename, artist, title, medium, dimension, cost, number
     draw.text((img.width/2, 0), drawtext_line1, font=font, fill='black', anchor="ma")
     draw.text((img.width/2, 30), drawtext_line2, font=font, fill='black', anchor="ma")
 
-    img_with_border.save(output_folder+"\\" + filename)
+    rgb_img = img_with_border.convert("RGB")
+    rgb_img.save(output_folder+"\\" + filename)
