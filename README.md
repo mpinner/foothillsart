@@ -2,6 +2,7 @@
 - [vscode](https://code.visualstudio.com/download) : a text editor
 - [miniconda](https://conda.io/projects/conda/en/latest/user-guide/install/download.html) : a python env and package manager
 - install pillow : `conda install pillow`
+- install pandas : `conda install pandas`
 
 ## run
 - run "Anaconda Prompt (miniconda3") from window prgrams under "Anaconda3 (64-bit)"

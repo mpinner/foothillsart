@@ -46,7 +46,7 @@ def createjurorimages(filename, title, medium, dimension, cost, number,showtitle
 
     # build new title 
     drawtext_line1=title.upper() + " #" + str(number)
-    drawtext_line2=medium + ", " + dimension + ", " + cost
+    drawtext_line2=medium + ", " + dimension
 
     font = ImageFont.truetype("arial.ttf", 24, encoding="unic")
     draw = ImageDraw.Draw(img_with_border)
